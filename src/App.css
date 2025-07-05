@@ -241,3 +241,10 @@ button:hover {
     width: 90%;
   }
 }
+
+@media (max-width: 480px) {
+  .search-bar {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
