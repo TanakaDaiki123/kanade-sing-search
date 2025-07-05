@@ -245,3 +245,8 @@ button:hover {
 .nowrap {
   white-space: nowrap;
 }
+
+.title .plain {
+  color: #333;  /* 黒文字 */
+  font-weight: 700;
+}
