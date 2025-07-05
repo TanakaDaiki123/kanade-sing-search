@@ -58,8 +58,11 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem; /* スマホでも端っこにくっつかないように */
 }
 
 .card {
