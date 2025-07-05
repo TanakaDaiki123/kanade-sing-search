@@ -117,7 +117,7 @@ body::before {
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Zen Maru Gothic', "Arial", sans-serif;
   background: linear-gradient(to bottom, #fff9e6, #fff3cc); /* 奏ちゃんイメージ */
 }
 
@@ -189,7 +189,7 @@ button:hover {
 
 .title {
   font-size: 2.6rem;
-  font-family: "Rounded Mplus 1c", sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
   color: #333;
   text-align: center;
   letter-spacing: 0.03em;
