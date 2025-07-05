@@ -1,38 +1,240 @@
-.App {
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:
+    url("https://raw.githubusercontent.com/saadeghi/assets/main/music-notes.png") repeat,
+    radial-gradient(circle at 20% 30%, #fff6c5 0%, transparent 40%),
+    radial-gradient(circle at 80% 60%, #ffeaa7 0%, transparent 50%);
+  background-size: 200px, auto, auto;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #f4b400; /* 強調した黄色 */
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  font-size: 1.1rem;
+  color: #777;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto 1rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #f6c945;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(246, 201, 69, 0.2);
+  transition: border-color 0.3s;
+}
+
+.search-box:focus {
+  border-color: #f4b400;
+  outline: none;
+}
+
+.grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(246, 201, 69, 0.15);
+  overflow: hidden;
+  border: 2px solid #faeb9e;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 300px; /* 明示的に幅を指定！ */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(244, 180, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.card-content a {
+  color: #f4b400;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #f8eab0;
+  padding-top: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #fff9e6, #fff3cc); /* 奏ちゃんイメージ */
+}
+
+/* リンクに奏ちゃんグラデーション */
+.card-content a {
+  background: linear-gradient(to right, #f6c500, #ffa726);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ffe066, #ffc400);
+  color: #3d3d3d;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 200, 0, 0.4);
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 200, 0, 0.5);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(900%) hue-rotate(10deg);
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1) saturate(1);
+}
+
+.underline-title {
+  position: relative;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #f4b400;
+  margin: 2rem 0 1rem;
+}
+
+.underline-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #f4b400;
+  margin: 0.4rem auto 0;
+  border-radius: 2px;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-family: "Rounded Mplus 1c", sans-serif;
+  color: #333; /* 視認性重視の黒系 */
+  text-align: center;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+.title .strong {
+  color: #f4b400; /* 奏ちゃんのイメージカラー */
+  font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .search-box {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .youtube-button {
+    font-size: 0.9rem;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.search-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%;
   }
 }

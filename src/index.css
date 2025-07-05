@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+
+.title .strong {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #333;
+}
