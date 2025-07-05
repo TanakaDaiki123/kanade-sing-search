@@ -190,10 +190,13 @@ button:hover {
 .title {
   font-size: 2.6rem;
   font-family: "Rounded Mplus 1c", sans-serif;
-  color: #333; /* 視認性重視の黒系 */
+  color: #333;
   text-align: center;
   letter-spacing: 0.03em;
   position: relative;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .title .strong {
@@ -235,7 +238,7 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 1.5rem; /* ← 今より少し小さくして1行に収まるようにする */
+    font-size: 1.4rem; /* ← 今より少し小さくして1行に収まるようにする */
   }
 }
 
