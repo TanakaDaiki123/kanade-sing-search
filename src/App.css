@@ -201,10 +201,6 @@ button:hover {
   font-weight: 900;
 }
 
-@media screen and (max-width: 600px) {
-  .title {
-    font-size: 1.8rem;
-  }
 
   .subtitle {
     font-size: 1rem;
@@ -213,6 +209,7 @@ button:hover {
   .search-box {
     width: 90%;
     font-size: 1rem;
+    padding: 0.6rem 0.8rem;
   }
 
   .card-content p {
@@ -227,7 +224,6 @@ button:hover {
     width: 24px;
     height: 24px;
   }
-}
 
 @media screen and (max-width: 600px) {
   .search-box {
