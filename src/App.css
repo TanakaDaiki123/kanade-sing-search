@@ -238,7 +238,7 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 1.3rem; /* ← 今より少し小さくして1行に収まるようにする */
+    font-size: 1.2rem; /* ← 今より少し小さくして1行に収まるようにする */
   }
 }
 
