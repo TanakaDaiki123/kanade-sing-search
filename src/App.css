@@ -238,3 +238,7 @@ button:hover {
     font-size: 1.5rem; /* ← 今より少し小さくして1行に収まるようにする */
   }
 }
+
+.nowrap {
+  white-space: nowrap;
+}
