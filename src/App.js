@@ -149,7 +149,7 @@ function App() {
     <div className="app">
       <header className="header">
       <h1 className="title">
-      <span className="strong">音乃瀬奏ちゃん</span><span className="nowrap">の歌</span>
+      <span className="strong">音乃瀬奏ちゃん</span><span className="nowrap">の歌検索</span>
         </h1>
         <p className="subtitle">歌枠で歌った曲をかんたん検索！</p>
         <input
